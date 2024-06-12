@@ -3,7 +3,7 @@
 #include <ctime>   // Dodane do inicjalizacji generatora losowego
 #include <sstream>
 
-Game::Game() : isRunning(false), window(nullptr), renderer(nullptr), floorTexture(nullptr), playerTexture(nullptr), originalPlayerTexture(nullptr), invincibleTexture(nullptr), obstacleTexture(nullptr), coinTexture(nullptr), playerVelocity(0), isJumping(false), invincible(false), score(0), coins(0), lives(3), highScore(0) {
+Game::Game() : isRunning(false), window(nullptr), renderer(nullptr), floorTexture(nullptr), playerTexture(nullptr), originalPlayerTexture(nullptr), invincibleTexture(nullptr), obstacleTexture(nullptr), coinTexture(nullptr), playerVelocity(0), isJumping(false), invincible(false), score(0), coins(0), lives(3), highScore(0), coinDirection(1) {
     playerRect = { 320, 448 - 32, 32, 32 }; // Startowa pozycja gracza
     startTime = SDL_GetTicks(); // Initialize start time
     coinRect = { 0, 0, 32, 32 }; // zaladuj pozycja i rozmiar pieniazka
@@ -241,6 +241,10 @@ void Game::update() {
 
     // Move coin
     coinRect.x -= obstacleSpeed;
+    coinRect.y += coinDirection * 2; // Move coin up and down
+    if (coinRect.y <= minCoinHeight || coinRect.y >= maxCoinHeight - coinRect.h) {
+        coinDirection *= -1; // Change direction
+    }
     if (coinRect.x + coinRect.w < 0) {
         coinRect.x = screenWidth;
         coinRect.y = minCoinHeight + rand() % (maxCoinHeight - minCoinHeight);

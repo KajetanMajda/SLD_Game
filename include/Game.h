@@ -56,6 +56,7 @@ private:
 
     int minCoinHeight = 64;
     int maxCoinHeight = 416;
+    int coinDirection;
 };
 
 #endif // GAME_H
