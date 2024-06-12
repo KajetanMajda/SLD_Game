@@ -1,0 +1,9 @@
+# ninja log v5
+4	451	1718193965281126430	CMakeFiles/JetpackJoyridePC.dir/src/Game.cpp.o	140c06d91924a052
+452	540	1718193965369641929	JetpackJoyridePC	e1e0751dd20ba554
+4	416	1718193965244984109	CMakeFiles/JetpackJoyridePC.dir/src/main.cpp.o	d6d3b6c72df20992
+2	39	1718194473726118017	build.ninja	1eec99895d8458fa
+299	325	1718103655411670051	MarioClone	a6875fc9db6f7570
+4	420	1718194482964006891	CMakeFiles/JetpackJoyridePC.dir/src/main.cpp.o	447c97f0f1fdca27
+4	456	1718194483001018023	CMakeFiles/JetpackJoyridePC.dir/src/Game.cpp.o	edb603f83fdd6597
+456	548	1718194483093357044	JetpackJoyridePC	e1e0751dd20ba554

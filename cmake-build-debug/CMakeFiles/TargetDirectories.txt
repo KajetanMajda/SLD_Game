@@ -1,0 +1,3 @@
+/Users/kajetan/CLionProjects/SLD_Game/cmake-build-debug/CMakeFiles/JetpackJoyridePC.dir
+/Users/kajetan/CLionProjects/SLD_Game/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/kajetan/CLionProjects/SLD_Game/cmake-build-debug/CMakeFiles/rebuild_cache.dir
